@@ -23,12 +23,12 @@ const PageContent = styled.div`
 const HomePage = props => (
   <Wrapper>
     <Sidebar location={props.location} width={200}>
-      <Sidebar.Entry pathname={"/"} icon={<HomeIcon />} label={"Welcome"} />
-      <Sidebar.Entry pathname={"/about"} icon={<InfoIcon />} label={"About"} />
+      <Sidebar.Entry pathname={'/'} icon={<HomeIcon />} label={'Welcome'} />
+      <Sidebar.Entry pathname={'/about'} icon={<InfoIcon />} label={'About'} />
     </Sidebar>
     <PageContent>
-      <Route exact path="/" component={WelcomePage} />
-      <Route path="/about" component={AboutPage} />
+      <Route exact path='/' component={WelcomePage} />
+      <Route path='/about' component={AboutPage} />
     </PageContent>
   </Wrapper>
 );
