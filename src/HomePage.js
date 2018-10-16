@@ -1,11 +1,11 @@
-import React from "react";
-import { Route, withRouter } from "react-router-dom";
-import styled from "styled-components";
-import Sidebar from "./Sidebar";
-import WelcomePage from "./WelcomePage";
-import AboutPage from "./AboutPage";
-import HomeIcon from "@material-ui/icons/Home";
-import InfoIcon from "@material-ui/icons/Info";
+import React from 'react';
+import { Route, withRouter } from 'react-router-dom';
+import styled from 'styled-components';
+import Sidebar from './Sidebar';
+import WelcomePage from './WelcomePage';
+import AboutPage from './AboutPage';
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
 
 const Wrapper = styled.div`
   height: 100%;
