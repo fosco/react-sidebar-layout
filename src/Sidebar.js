@@ -26,7 +26,7 @@ const ItemWrapper = styled(Link)`
   padding-right: 20px;
   text-decoration: none;
   color: black;
-  ${(props) => props.selected && `background-color: ${DARK_GRAY};`};
+  ${(props) => props.selected && `background-color: ${DARK_GRAY};`}
 `;
 
 const Item = styled.div`
