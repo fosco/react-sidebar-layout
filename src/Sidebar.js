@@ -11,11 +11,11 @@ import { Link } from 'react-router-dom';
 
 // Styles
 const Wrapper = styled.div`
-  display:flex;
-  flex-direction:column;
-  width: ${(props) => props.width}px;
-  height:100%;
-  background:${LIGHT_GRAY};
+  display: flex;
+  flex-direction: column;
+  width: ${props => props.width}px;
+  height: 100%;
+  background: ${LIGHT_GRAY};
   overflow: hidden;
 `;
 
@@ -26,7 +26,7 @@ const ItemWrapper = styled(Link)`
   padding-right: 20px;
   text-decoration: none;
   color: black;
-  ${(props) => props.selected && `background-color: ${DARK_GRAY};`}
+  ${props => props.selected && `background-color: ${DARK_GRAY};`};
 `;
 
 const Item = styled.div`
@@ -51,12 +51,11 @@ const Label = styled.span`
 `;
 
 const context = createContext({
-  currentPath: "/",
+  currentPath: '/'
 });
 
 const { Provider, Consumer } = context;
 
-/*eslint-disable */
 class Entry extends Component {
   render() {
     const { pathname, icon, label } = this.props;
@@ -65,7 +64,7 @@ class Entry extends Component {
         {({ currentPath }) => (
           <ItemWrapper
             to={pathname}
-            selected={pathname.split("/")[1] === currentPath.split("/")[1]}
+            selected={pathname.split('/')[1] === currentPath.split('/')[1]}
           >
             <Item>
               <Icon>{icon}</Icon>
@@ -80,7 +79,7 @@ class Entry extends Component {
 
 Entry.propTypes = {
   pathname: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.object,
   label: PropTypes.string
 };
 
@@ -106,12 +105,11 @@ Sidebar.propTypes = {
   children: PropTypes.array,
   location: PropTypes.object,
   userData: PropTypes.object,
-  width: PropTypes.number,
+  width: PropTypes.number
 };
 
 Sidebar.defaultProps = {
-  width: 200,
+  width: 200
 };
 
 export default Sidebar;
-/*eslint-enable */
