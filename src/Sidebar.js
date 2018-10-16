@@ -51,7 +51,7 @@ const Label = styled.span`
 `;
 
 const context = createContext({
-  currentPath: "/"
+  currentPath: "/",
 });
 
 const { Provider, Consumer } = context;
@@ -106,11 +106,11 @@ Sidebar.propTypes = {
   children: PropTypes.array,
   location: PropTypes.object,
   userData: PropTypes.object,
-  width: PropTypes.number
+  width: PropTypes.number,
 };
 
 Sidebar.defaultProps = {
-  width: 200
+  width: 200,
 };
 
 export default Sidebar;
