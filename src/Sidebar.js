@@ -11,12 +11,12 @@ import { Link } from "react-router-dom";
 
 // Styles
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: ${props => props.width}px;
-  height: 100%;
-  background: ${LIGHT_GRAY};
-  overflow: auto;
+  display:flex;
+  flex-direction:column;
+  width: ${(props) => props.width}px;
+  height:100%;
+  background:${LIGHT_GRAY};
+  overflow: hidden;
 `;
 
 const ItemWrapper = styled(Link)`
