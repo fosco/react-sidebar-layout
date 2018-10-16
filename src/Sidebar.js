@@ -3,11 +3,11 @@
  * Sidebar
  *
  */
-import React, { Component, createContext } from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { LIGHT_GRAY, DARK_GRAY } from "./utils/colors";
-import { Link } from "react-router-dom";
+import React, { Component, createContext } from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { LIGHT_GRAY, DARK_GRAY } from './utils/colors';
+import { Link } from 'react-router-dom';
 
 // Styles
 const Wrapper = styled.div`
@@ -26,7 +26,7 @@ const ItemWrapper = styled(Link)`
   padding-right: 20px;
   text-decoration: none;
   color: black;
-  ${props => props.selected && `background-color: ${DARK_GRAY};`};
+  ${(props) => props.selected && `background-color: ${DARK_GRAY};`};
 `;
 
 const Item = styled.div`
