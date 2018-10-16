@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   width: ${(props) => props.width}px;
   height:100%;
   background:${LIGHT_GRAY};
-  overflow: auto;
+  overflow: hidden;
 `;
 
 const ItemWrapper = styled(Link)`
