@@ -45,6 +45,9 @@ const Icon = styled.img`
 
 const Label = styled.span`
   font-size: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 `;
 
 const context = createContext({
