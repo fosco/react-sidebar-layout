@@ -16,14 +16,12 @@ const Wrapper = styled.div`
   width: ${props => props.width}px;
   height: 100%;
   background: ${LIGHT_GRAY};
-  overflow: hidden;
+  overflow: auto;
 `;
 
 const ItemWrapper = styled(Link)`
   height: 40px;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
   text-decoration: none;
   color: black;
   ${props => props.selected && `background-color: ${DARK_GRAY};`};
@@ -40,7 +38,8 @@ const Item = styled.div`
 
 const Icon = styled.div`
   height: 70%;
-  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 const Label = styled.span`
